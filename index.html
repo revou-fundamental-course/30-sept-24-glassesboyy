@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>
+          <div class="k">K</div>
+          <div class="a">a</div>
+          <div class="l">l</div>
+          <div class="k">k</div>
+          <div class="u">u</div>
+          <div class="l">l</div>
+          <div class="a">a</div>
+          <div class="t">t</div>
+          <div class="o">o</div>
+          <div class="r">r</div>
+          <div class="spasi"></div>
+          <div class="k">K</div>
+          <div class="o">o</div>
+          <div class="n">n</div>
+          <div class="v">v</div>
+          <div class="e">e</div>
+          <div class="r">r</div>
+          <div class="s">s</div>
+          <div class="i">i</div>
+          <div class="spasi"></div>
+          <div class="s">S</div>
+          <div class="u">u</div>
+          <div class="h">h</div>
+          <div class="u">u</div>
+        </h1>
+      </header>
+      <hr />
+
+      <form>
+        <div class="input-temperature">
+          <h3 for="input-temperature" class="atas-kotakkan">Masukkan Suhu:</h3>
+          <input type="number" id="input-temperature" />
+        </div>
+
+        <div class="inputan-suhu">
+          <label for="input-unit" class="atas-kotakkan"
+            >Pilih Temperatur:</label
+          >
+          <select id="input-unit">
+            <option value="C">Celcius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+            <option value="R">Reamur</option>
+          </select>
+        </div>
+
+        <div class="outputan-suhu">
+          <label for="output-unit" class="atas-kotakkan">Konversi ke:</label>
+          <select id="output-unit">
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+            <option value="R">Reamur</option>
+            <option value="C">Celcius</option>
+          </select>
+        </div>
+
+        <div class="button">
+          <button class="form-btn" onclick="convertTemperature()">
+            Konversi
+          </button>
+          <button class="form-btn reset" onclick="resetForm()">Reset</button>
+        </div>
+      </form>
+
+      <hr />
+
+      <section class="hasil">
+        <h3>Hasil Konversi:</h3>
+        <textarea id="output" readonly></textarea>
+      </section>
+
+      <section class="cara">
+        <h3>Cara Kalkulasi:</h3>
+        <textarea id="calculation" readonly></textarea>
+      </section>
+
+      <hr />
+
+      <section class="info">
+        <h3>Info Content:</h3>
+        <br />
+        <marquee>
+          Temperatur adalah ukuran derajat panas atau dinginnya suatu objek atau
+          lingkungan, biasanya diukur dalam skala Celsius, Fahrenheit, atau
+          Kelvin, yang mencerminkan energi kinetik rata-rata partikel dalam
+          substansi tersebut.
+        </marquee>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Made by Zul 2024</h2>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

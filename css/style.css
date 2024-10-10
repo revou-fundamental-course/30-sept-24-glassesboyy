@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, cyan 0%, rgba(0, 0, 0, 1) 77%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+/* Bagian Header */
+
+header {
+  margin: 12px;
+  font-weight: 800;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.3vw;
+}
+
+h1 div {
+  transition: all 1s;
+  margin: 0 2px;
+}
+
+.spasi {
+  margin: 5px;
+}
+
+.a:hover,
+.e:hover,
+.h:hover,
+.i:hover,
+.k:hover,
+.l:hover,
+.n:hover,
+.o:hover,
+.r:hover,
+.s:hover,
+.t:hover,
+.u:hover,
+.v:hover {
+  color: cyan;
+  cursor: pointer;
+  transform: scale(1.7);
+  text-shadow: 0px 0px 15px #ffffff, 0px 0px 30px #ffffff, 0px 0px 60px #ffffff;
+  transition: 0s;
+}
+
+main {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 50px 0px white;
+  margin: 12px;
+}
+
+/* Form Content */
+hr {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 5px 0.3px white;
+  border: none;
+  height: 1px;
+}
+
+.sub-header {
+  letter-spacing: 1px;
+  font-size: 1000px;
+}
+
+form {
+  margin: 20px 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.input-temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputan-suhu {
+  margin: 10px;
+  font-size: 12px;
+}
+
+.outputan-suhu {
+  margin: 10px;
+  font-size: 12px;
+}
+
+#input-unit {
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 2px;
+  width: 100px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+}
+
+#output-unit {
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 2px;
+  width: 100px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: 700;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+}
+
+option {
+  border-radius: 5px;
+  font-size: 10px;
+  width: 100px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+  font-weight: 700;
+}
+
+.hasil {
+  margin: 12px 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form-btn {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  cursor: pointer;
+  border: 0;
+  background-color: cyan;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+}
+
+.form-btn:hover {
+  background-color: white;
+  width: 145px;
+  color: cyan;
+  box-shadow: white 0px 7px 20px 0px;
+}
+
+.form-btn:active {
+  background-color: white;
+  color: cyan;
+  width: 135px;
+  box-shadow: white 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 100ms;
+}
+
+.reset,
+.reverse {
+  background-color: white;
+  color: cyan;
+}
+
+input[type="number"],
+textarea {
+  background-color: #2d2d2d;
+  width: 100%;
+  max-width: 230px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px white;
+  color: white;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+
+input[type="number"]:hover,
+textarea:hover,
+input[type="number"]:focus,
+textarea:focus {
+  background-color: #212121;
+  box-shadow: 0px 0px 30px 1px white;
+}
+
+.cara,
+.info {
+  margin: 12px 0;
+  padding: 10px;
+  line-height: 20px;
+}
+
+footer {
+  margin: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Biar Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  main {
+    margin: 15px;
+    width: 95%;
+  }
+
+  header {
+    font-size: 22px;
+  }
+
+  article {
+    font-size: 14px;
+    margin: 15px 10px;
+  }
+
+  .form-btn {
+    padding: 8px;
+  }
+
+  input[type="number"],
+  textarea {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4vw;
+  }
+
+  header {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  article {
+    font-size: 12px;
+    margin: 10px 10px;
+  }
+
+  .form-btn {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  input[type="number"],
+  textarea {
+    max-width: 180px;
+    padding: 8px;
+  }
+}
